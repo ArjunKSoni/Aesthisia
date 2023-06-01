@@ -8,7 +8,7 @@ export default function About() {
             <img src="exo.png" alt="" />
             <div>
                 <h1 className='flex text-white text-3xl font-bold'>100% Uptime<img src="emoji.png" width={"40px"} alt="" /></h1>
-                <h3 className='text-slate-300 text-lg '>Zero Infrastructue</h3>
+                <h3 className='text-slate-300 text-lg '>Zero Infrastructure</h3>
                 <h3 className='text-slate-300 text-lg '>Management</h3>
             </div>
             <div className='text-white flex items-center justify-between w-full'>
