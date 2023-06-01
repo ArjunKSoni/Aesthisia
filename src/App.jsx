@@ -1,13 +1,20 @@
 import './App.css';
-import About from './components/about';
-import Form from './components/form';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom';
+import Login from './components/login';
+import Home from './components/home';
 
 function App() {
   return (
-    <div className='w-screen display items-center justify-center gap-1 h-screen flex-wrap '>
-      <About />
-      <Form />
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path='/home' element={<Home />} />
+        <Route exact path='/' element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 
