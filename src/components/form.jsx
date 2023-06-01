@@ -27,7 +27,7 @@ export default function Form() {
                     <h3 className='text-slate-500 text-sm'>Glad to see you, Again!</h3>
                 </div>
                 <div className='input mb-4 flex flex-col items-center justify-center  w-full'>
-                    <input autoComplete='false' value={email} onChange={e => setemail(e.target.value)} className='p-4 mb-4' placeholder='Enter Your email' type="text" />
+                    <input autoComplete='false' value={email} onChange={e => setemail(e.target.value)} className='p-4 mb-4' placeholder='Enter Your email' type="email" />
                     <div className='input2 flex items-center justify-between p-4'><input autoComplete='false' value={pass} onChange={e => setpass(e.target.value)} placeholder='Enter Your password' className='w-4/5' type={type} /><AiOutlineEye onClick={e => type === "text" ? settype("password") : settype("text")} className='ml-1' /></div>
                     <div style={{ width: "60%" }} className='text-end'><h3 className='text-slate-400 text-sm'>Forgot Password?</h3></div>
                 </div>
